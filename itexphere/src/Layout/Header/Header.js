@@ -35,7 +35,7 @@ export default function Header() {
                 }}
               >
                 <ListItem disablePadding>
-                  <ListItemButton component="a" href="#features" padding={0}>
+                  <ListItemButton component="a" to="/" padding={0}>
                     <ListItemText primary="Home" />
                   </ListItemButton>
                 </ListItem>
@@ -50,12 +50,12 @@ export default function Header() {
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton component="a" href="#about">
+                  <ListItemButton component="a" to="/About">
                     <ListItemText primary="AboutUs" />
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton component="a" href="#about">
+                  <ListItemButton component="a" to="/Contact">
                     <ListItemText primary="Contact" />
                   </ListItemButton>
                 </ListItem>
@@ -80,12 +80,6 @@ export default function Header() {
           </Grid>
         </Toolbar>
       </AppBar>
-      {/* <img
-        src="https://i.postimg.cc/057Rb0DL/Mac-Book-Air-1.png"
-        alt="banner"
-        width="100%"
-      /> */}
-      <Toolbar />
     </React.Fragment>
   );
 }
